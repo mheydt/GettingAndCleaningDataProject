@@ -1,8 +1,8 @@
 # readme.md
 
-The "run_analysis.R" file performs a task of making a tidy data set out of the Human Activity Recognition Using Smartphones Dataset.
+The "run_analysis.R" file performs the task of making a tidy data set out of the Human Activity Recognition Using Smartphones Dataset.  It extracts the mean and std values from the data set, and summarizes them by subject and activity.  Also performed are the adding of descriptive labels for each activity (to each row of the result data set), and columns are renamed to the descriptive feature names instead of the original V* column names.
 
-It is worth noting that this script uses the Plyr package, so make sure that is installed before running
+It is worth noting that this script uses the Plyr package, so make sure that is installed before running.
 
 The script reads the following files from the data set:
 
@@ -29,3 +29,5 @@ Please refer to the script for detailed description on how the data is processed
 * The columns are then renamed to descriptive labels
 * Plyr is then used to summarize the columns by subject and activity
 * And the result is written to averages_by_subject_and_activity.txt
+
+A code book for the resultant data set is available in the codebook.md file.

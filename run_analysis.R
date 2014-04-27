@@ -8,14 +8,14 @@
 library(plyr)
 
 # read in all needed data
-activity_labels <- read.table("data/activity_labels.txt")
-features <- read.table("data/features.txt")
-subject_train <- read.table("data/train/subject_train.txt")
-subject_test <- read.table("data/test/subject_test.txt")
-x_train <- read.table("data/train/X_train.txt")
-y_train <- read.table("data/train/Y_train.txt")
-x_test <- read.table("data/test/X_test.txt")
-y_test <- read.table("data/test/Y_test.txt")
+activity_labels <- read.table("activity_labels.txt")
+features <- read.table("features.txt")
+subject_train <- read.table("subject_train.txt")
+subject_test <- read.table("subject_test.txt")
+x_train <- read.table("X_train.txt")
+y_train <- read.table("Y_train.txt")
+x_test <- read.table("X_test.txt")
+y_test <- read.table("Y_test.txt")
 
 # do some renaming for convieniece
 names(activity_labels) <- c("Activity.ID", "Activity.Description")
@@ -58,7 +58,7 @@ features_all$Cleaned.Name = gsub("-", ".", gsub("\\(\\)", "", as.character(featu
 # order by Feature.ID
 # after this we have a nice list of features that can be used later to select columns from the larger data set
 features_all <- features_all[order(features_all$Feature.ID),]
-  
+
 # concat the x_test and x_train, but only columns with mean or std
 # the whole point of the as.numerid Feature.ID is so we can extract these
 all_x <- rbind(x_test, x_train)[,features_all$Feature.ID]

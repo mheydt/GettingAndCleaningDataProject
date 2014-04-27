@@ -8,12 +8,14 @@ I have provided a script "load_result.R" which will do this for you.
 The data set contains the following 81 variables:
 
 * Subject.ID
-The id of the subject from the subject_test.txt and subject_train.txt files.  It is simply an integer that represent a subject under observation.  There are no mappings of the integer to a more descriptive name.
+
+The id of the subject from the subject_test.txt and subject_train.txt files.  It is simply an integer that represent a subject under observation.  There are no mappings of the integer to a more descriptive name of the subject.
 
 * Activity.Description
-For each subject, there are a number of activities that are measured.  These are pulled from the original activity_labels.txt file and provided instead of an integer activity value for human convenience.
 
-The remaining variables are pulled from the x_test.txt and x_train.txt files, and are the calculated averaage of the values in those files grouped by subject id and activity.
+For each subject, there are a number of activities that are measured.  These are pulled from the original activity_labels.txt file and provided instead of an integer activity value for human convenience
+
+The remaining variables are pulled from the x_test.txt and x_train.txt files, and are the calculated averaage of the values in those files grouped by subject id and activity.  For more info please refer to the original data sets features_info.txt file which I have provided.
 
 * tBodyAcc.mean.X
 * tBodyAcc.mean.Y

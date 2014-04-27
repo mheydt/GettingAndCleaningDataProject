@@ -5,15 +5,15 @@ To view the data in the file, load it with
 
 I have provided a script "load_result.R" which will do this for you.
 
-The data set contains the following variables:
+The data set contains the following 81 variables:
 
 * Subject.ID
-** The id of the subject from the subject_test.txt and subject_train.txt files.  It is simply an integer that represent a subject under observation.  There are no mappings of the integer to a more descriptive name.
+The id of the subject from the subject_test.txt and subject_train.txt files.  It is simply an integer that represent a subject under observation.  There are no mappings of the integer to a more descriptive name.
 
 * Activity.Description
-** For each subject, there are a number of activities that are measured.  These are pulled from the original activity_labels.txt file.
+For each subject, there are a number of activities that are measured.  These are pulled from the original activity_labels.txt file and provided instead of an integer activity value for human convenience.
 
-The remaining variables are pulled from the x_test.txt and x_train.txt files, and represent the averaage of the values in those files grouped by suject id and activity.
+The remaining variables are pulled from the x_test.txt and x_train.txt files, and are the calculated averaage of the values in those files grouped by subject id and activity.
 
 * tBodyAcc.mean.X
 * tBodyAcc.mean.Y
